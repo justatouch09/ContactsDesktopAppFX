@@ -10,9 +10,9 @@
    <children>
       <HBox prefWidth="200.0">
          <children>
-            <TextField fx:id="name" text="Name" HBox.hgrow="ALWAYS" />
-            <TextField fx:id="phoneNumber" text="Phone #" HBox.hgrow="ALWAYS" />
-            <TextField fx:id="email" text="Email" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="name" promptText="Name" text="Name" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="phoneNumber" promptText="Phone #" text="Phone #" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="email" promptText="Email" text="Email" HBox.hgrow="ALWAYS" />
             <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#addContact" text="Add" />
             <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#removeContact" text="Remove" />
          </children>
