@@ -27,8 +27,14 @@ public class Controller implements Initializable {
 
     //EVENT HANDLERS
     public void addContact() {
-        contacts.add(new Contact(name.getText(), phoneNumber.getText(), email.getText()));
-        name.setText(""); phoneNumber.setText(""); email.setText("");
+        if(name.getText().isEmpty() || phoneNumber.getText().isEmpty() || email.getText().isEmpty()) {
+
+        } else {
+            contacts.add(new Contact(name.getText(), phoneNumber.getText(), email.getText()));
+            name.setText("");
+            phoneNumber.setText("");
+            email.setText("");
+        }
     }
 
     public void removeContact() {
